@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav snapshot  1`] = `
+<div
+  className="nav false"
+>
+  <img
+    alt="Netflix Logo"
+    className="nav__logo"
+    src="netflix-logo.png"
+  />
+  <img
+    alt="User Logo"
+    className="nav__avatar"
+    src="user.png"
+  />
+</div>
+`;

@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav snapshot  1`] = `
+<header
+  className="banner"
+  style={
+    Object {
+      "backgroundImage": "url(\\"https://image.tmdb.org/t/p/original/undefined\\")",
+      "backgroundPostion": "center center",
+      "backgroundSize": "cover",
+    }
+  }
+>
+  <div
+    className="banner__contents"
+  >
+    <h1
+      className="banner__title"
+    />
+    <div
+      className="banner__buttons"
+    >
+      <button
+        className="banner__button"
+      >
+        Play
+      </button>
+      <button
+        className="banner__button"
+      >
+        My List
+      </button>
+    </div>
+    <p
+      className="banner__description"
+    />
+  </div>
+  <div
+    className="banner--fadeBottom"
+  />
+</header>
+`;
