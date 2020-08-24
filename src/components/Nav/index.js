@@ -21,12 +21,12 @@ const Nav = () => {
     <div className={`nav ${show && "nav__black"}`}>
       <img
         className="nav__logo"
-        src={require("./assets/images/netflix-logo.png")}
+        src={require("../../assets/images/netflix-logo.png")}
         alt="Netflix Logo"
       />
       <img
         className="nav__avatar"
-        src={require("./assets/images/user.png")}
+        src={require("../../assets/images/user.png")}
         alt="User Logo"
       />
     </div>
