@@ -6,7 +6,7 @@ exports[`Nav snapshot  1`] = `
   style={
     Object {
       "backgroundImage": "url(\\"https://image.tmdb.org/t/p/original/undefined\\")",
-      "backgroundPostion": "center center",
+      "backgroundPosition": "top center",
       "backgroundSize": "cover",
     }
   }
