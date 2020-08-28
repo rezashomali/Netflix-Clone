@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Nav.css";
 
-const Nav = () => {
+const Nav: React.FC = () => {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
@@ -13,7 +13,7 @@ const Nav = () => {
       }
     });
     return () => {
-      window.removeEventListener("scroll");
+      window.removeEventListener("scroll", () => {});
     };
   }, []);
 

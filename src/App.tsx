@@ -5,7 +5,7 @@ import "./App.css";
 import requests from "./Api/requests";
 import Nav from "./components/Nav";
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="app">
       <Nav />
@@ -24,6 +24,6 @@ function App() {
       <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
     </div>
   );
-}
+};
 
 export default App;

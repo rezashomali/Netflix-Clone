@@ -2,8 +2,17 @@ import React, { useState, useEffect } from "react";
 import axios from "../../Api/axios";
 import requests from "../../Api/requests";
 import "./banner.css";
-const Banner = () => {
-  const [movie, setMovie] = useState([]);
+
+interface MovieType {
+  backdrop_path: string;
+  name?: string;
+  title?: string;
+  original_name?: string;
+  overview: string;
+}
+
+const Banner: React.FC = () => {
+  const [movie, setMovie] = useState<MovieType>();
 
   useEffect(() => {
     async function fetchData() {
@@ -17,7 +26,7 @@ const Banner = () => {
     fetchData();
   }, []);
 
-  const truncate = (str, n) => {
+  const truncate: Function = (str: string, n: number) => {
     return str?.length > n ? str.substr(0, n - 1) + "..." : str;
   };
 
@@ -27,7 +36,7 @@ const Banner = () => {
       style={{
         backgroundSize: "cover",
         backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
-        backgroundPostion: "center center",
+        backgroundPosition: "top center",
       }}
     >
       <div className="banner__contents">
